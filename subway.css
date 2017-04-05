@@ -1,11 +1,10 @@
 .btn {
-  display:block;
+  display:inline-block;
   background:green;
-  height: 100px;
-  width: 100px;
+  height: 125px;
+  width: 125px;
   border-radius: 50%;
   border: 1px solid transparent;
-  
 }
 
 a.btn {
@@ -20,13 +19,13 @@ a.btn {
 .circle{
   position: relative;
   left: 25px;
-  top:-15px;
+  top:12px;
   font-size:100px;
   color:white;
   
 }
 .purple{
-  background:purple;
+  background-color:purple;
 }
 
 .red{
@@ -39,4 +38,27 @@ a.btn {
 
 .blue{
   background-color:#133160;
+}
+
+.orange{
+  background-color:#e27806;
+}
+.yellow{
+  background-color:#FFE933;
+}
+.brown{
+  background-color:#663300;
+}
+.lightgreen{
+  background-color:#85e085;
+}
+.lightblue{
+  background-color: #33cccc;
+}
+
+.results {
+  border: 1px solid green;
+  list-style-type: decimal-leading-zero;
+  font-size:24px;
+  color:#6C1B31;
 }

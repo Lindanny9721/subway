@@ -19,6 +19,11 @@ $.ajax({
     console.log(line);
   }
   console.log("after loop")
- 
+  var results = ["One","Two","Three","Four","Five","Six"];
+  var list = "";
+  for(var i=0; i<results.length; i++) {
+    list += "<li>" + results[i] + "</li>";
+  }
+   $('.results').append(list);
 });
 
