@@ -1,0 +1,42 @@
+.btn {
+  display:block;
+  background:green;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  
+}
+
+a.btn {
+  text-decoration: none;
+  justify-content: flex-end;
+}
+
+.flex {
+  display: flex;
+}
+
+.circle{
+  position: relative;
+  left: 25px;
+  top:-15px;
+  font-size:100px;
+  color:white;
+  
+}
+.purple{
+  background:purple;
+}
+
+.red{
+  background-color:#d61727;
+}
+
+.green{
+  background-color:green;
+}
+
+.blue{
+  background-color:#133160;
+}
