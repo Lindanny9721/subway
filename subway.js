@@ -9,6 +9,14 @@ $(document).ready(function() {
         }
       }).done(function(data) {
         //   alert("Retrieved " + data.length + " records from the dataset!");
+       
+       var trainData = {
+         "1": {
+           "stops": []
+         }
+       }
+    
+    
         window.mydata = data;
         var line = "0";
         var name = "0";
@@ -18,16 +26,15 @@ $(document).ready(function() {
           console.log(line);
           var lines = line.split("-");
           console.log("line is " + lines);
+           trainData["line"]["stops"].push(name[i]);
           
         }
 
-        for (var i = 0; i < window.mydata.length; i++) {
-          var name = window.mydata[i].name
-          console.log("station is");
-          console.log(name);
-          
-          
-        }
+        // for (var i = 0; i < window.mydata.length; i++) {
+        //   var name = window.mydata[i].name
+        //   console.log("station is");
+        //   console.log(name);
+        // }
 
      
 
