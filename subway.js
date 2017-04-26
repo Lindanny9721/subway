@@ -15,15 +15,22 @@ $(document).ready(function() {
         console.log("before loop")
         for (var i = 0; i < window.mydata.length; i++) {
           var line = window.mydata[i].line
-          console.log("line is");
           console.log(line);
+          var lines = line.split("-");
+          console.log("line is " + lines);
+          
         }
 
         for (var i = 0; i < window.mydata.length; i++) {
           var name = window.mydata[i].name
           console.log("station is");
           console.log(name);
+          
+          
         }
+
+     
+
 
 
         console.log("after loop")
@@ -34,7 +41,7 @@ $(document).ready(function() {
         }
         $('.results').append(list);
         
-        var trains = ["1","2","3","9","4","5","6"]
+        var trains = ["1","2","3","9","4","5","6","A","C","E","B","D","F"]
         for (var i=0; i < trains.length; i++) {
           console.log("trains i " + trains[i])
         
@@ -48,6 +55,7 @@ $(document).ready(function() {
         }
         
          $(".btn").click(function() {
+        //   var data = $(this).ajax('url');
           alert("button was clicked");
         })
       });
