@@ -18,16 +18,26 @@ $(document).ready(function() {
     
     
         window.mydata = data;
-        var line = "0";
-        var name = "0";
+        var line = 0;
+        var name = 0;
         console.log("before loop")
         for (var i = 0; i < window.mydata.length; i++) {
+          console.log(window.mydata[i]);
           var line = window.mydata[i].line
           console.log(line);
           var lines = line.split("-");
           console.log("line is " + lines);
-           trainData["line"]["stops"].push(name[i]);
-          
+          for (var j=0; j < lines.length; j++) {
+            if (trainData[lines[j]]) {
+              trainData[lines[j]]["stops"].push(window.mydata[i].name);
+            }
+            else {
+              trainData[lines[j]] = {};
+              trainData[lines[j]]["stops"] = [window.mydata[i].name];
+            }
+            console.log(trainData[lines[j]]);
+          } 
+          console.log("This is " , trainData)
         }
 
         // for (var i = 0; i < window.mydata.length; i++) {
