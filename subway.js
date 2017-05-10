@@ -1,4 +1,5 @@
 // console.log('is jquery here?', $);
+var trains = ["1","2","3","9","4","5","6","A","C","E","B","D","F","N","Q","R","W"]
 $(document).ready(function() {
       $.ajax({
         url: "https://data.cityofnewyork.us/resource/kk4q-3rt2.json",
@@ -51,19 +52,14 @@ $(document).ready(function() {
 
 
         console.log("after loop")
-        var results = ["One", "Two", "Three", "Four", "Five", "Six"];
-        var list = "";
-        for (var i = 0; i < results.length; i++) {
-          list += "<li>" + results[i] + "</li>";
-        }
-        $('.results').append(list);
         
-        var trains = ["1","2","3","9","4","5","6","A","C","E","B","D","F"]
+        
+        
         for (var i=0; i < trains.length; i++) {
           console.log("trains i " + trains[i])
         
           var circleHtml =
-            '<a class="btn red" id="first" href="#">' +
+            '<a class="btn red" id="' + trains[i] + '" href="#">' +
               '<div class="circle">' + trains[i] + '</div>' +
                 '<i class="ion-ios-arrow-down">' +  
               '</i>' +
@@ -71,9 +67,20 @@ $(document).ready(function() {
           $("#all").append(circleHtml);
         }
         
-         $(".btn").click(function() {
-        //   var data = $(this).ajax('url');
-          alert("button was clicked");
+        $(".btn").click(function() {
+            // $( "#book" ).fadeIn( "slow", function()
+          //   var data = $(this).ajax('url');
+         $("#results").text("Hello world!");
+        var list = "";
+        var results =trainData[$(this).attr("id")].stops;
+        for (var i = 0; i < results.length; i++) {
+          list += "<li>" + results[i] + "</li>";
+        }
+        $('.results').html(list);
+        var scrolled = scrolled + 300;
+        $(".results").stop().animate({
+            scrollTop: scrolled
+        })
         })
       });
       

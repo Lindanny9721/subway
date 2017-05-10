@@ -1,6 +1,6 @@
 .btn {
-  display:inline-block;
-  background:green;
+  display: inline-block;
+  background: green;
   height: 125px;
   width: 125px;
   border-radius: 50%;
@@ -16,55 +16,58 @@ a.btn {
   display: flex;
 }
 
-.circle{
+.circle {
   position: relative;
   left: 25px;
-  top:12px;
-  font-size:100px;
-  color:white;
-  
-}
-.purple{
-  background-color:purple;
+  top: 12px;
+  font-size: 100px;
+  color: white;
 }
 
-.red{
-  background-color:#d61727;
+.purple {
+  background-color: purple;
 }
 
-.green{
-  background-color:green;
+.red {
+  background-color: #d61727;
 }
 
-.blue{
-  background-color:#133160;
+.green {
+  background-color: green;
 }
 
-.orange{
-  background-color:#e27806;
+.blue {
+  background-color: #133160;
 }
-.yellow{
-  background-color:#FFE933;
+
+.orange {
+  background-color: #e27806;
 }
-.brown{
-  background-color:#663300;
+
+.yellow {
+  background-color: #FFE933;
 }
-.lightgreen{
-  background-color:#85e085;
+
+.brown {
+  background-color: #663300;
 }
-.lightblue{
+
+.lightgreen {
+  background-color: #85e085;
+}
+
+.lightblue {
   background-color: #33cccc;
 }
 
 .results {
   border: 1px solid green;
   list-style-type: decimal-leading-zero;
-  font-size:24px;
-  color:#6C1B31;
-  
+  font-size: 24px;
+  color: #6C1B31;
 }
 
-.stations{
-  color:red;
-  text-align:center;
+.stations {
+  color: red;
+  text-align: center;
 }
