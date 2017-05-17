@@ -1,6 +1,5 @@
 .btn {
   display: inline-block;
-  background: green;
   height: 125px;
   width: 125px;
   border-radius: 50%;
@@ -18,56 +17,60 @@ a.btn {
 
 .circle {
   position: relative;
-  left: 25px;
-  top: 12px;
+  left: 30px;
+  top: 5px;
   font-size: 100px;
   color: white;
 }
 
-.purple {
-  background-color: purple;
-}
-
-.red {
-  background-color: #d61727;
-}
-
-.green {
-  background-color: green;
-}
-
-.blue {
-  background-color: #133160;
-}
-
-.orange {
-  background-color: #e27806;
-}
-
-.yellow {
-  background-color: #FFE933;
-}
-
-.brown {
-  background-color: #663300;
-}
-
-.lightgreen {
-  background-color: #85e085;
-}
-
-.lightblue {
-  background-color: #33cccc;
-}
 
 .results {
   border: 1px solid green;
   list-style-type: decimal-leading-zero;
   font-size: 24px;
-  color: #6C1B31;
+  color: black;
+  background:silver;
 }
 
 .stations {
-  color: red;
+  color: #004d4d;
   text-align: center;
+  font-size:40px;
+}
+body{
+  background-color:white;
+}
+
+.red {
+  background: red;
+}
+
+.green {
+  background: green;
+}
+.yellow {
+  background: #ffbe42;
+}
+.orange {
+  background: #ff8c00 ;
+}
+.blue {
+  background: blue;
+}
+.brown {
+  background: #614126;
+}
+.lightgreen {
+  background: #98e698;
+}
+.grey {
+  background: grey;
+}
+.lightblack {
+  background: #1a1a1a;
+}
+h1{
+  background:#9EB9D4;
+  margin-top:0px;
+  height:150px;
 }
