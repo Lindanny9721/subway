@@ -1,5 +1,5 @@
 // console.log('is jquery here?', $);
-var trains = ["1", "2", "3", "9", "4", "5", "6", "A", "C", "E", "B", "D", "F", "M", "N", "Q", "R", "W", "J", "Z", "G", "L", "S" ]
+var trains = ["1", "2", "3", "4", "5", "6", "A", "C", "E", "B", "D", "F", "M", "N", "Q", "R", "W", "J", "Z", "G", "L", "S" ]
 $(document).ready(function() {
   $.ajax({
     url: "https://data.cityofnewyork.us/resource/kk4q-3rt2.json",
@@ -24,7 +24,6 @@ $(document).ready(function() {
       "4": "green",
       "5": "green",
       "6": "green",
-      "7": "purple",
       "A": "blue",
       "C": "blue",
       "E": "blue",
@@ -102,8 +101,10 @@ $(document).ready(function() {
       var list = "";
       var results = trainData[$(this).attr("id")].stops;
       for (var i = 0; i < results.length; i++) {
-        list += "<li>" + results[i] + "</li>";
-      }
+        list += "<li>"+ "<a href=\"https://www.google.com/#q=" + results[i] + "\"> "+ results[i] + "</a>" + "</li>";
+      } 
+      console.log("results are "+ list);
+      
       $('.results').html(list);
     })
   });

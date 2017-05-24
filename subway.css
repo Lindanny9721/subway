@@ -3,7 +3,7 @@
   height: 125px;
   width: 125px;
   border-radius: 50%;
-  border: 1px solid transparent;
+  border: 10px solid black;
 }
 
 a.btn {
@@ -29,16 +29,39 @@ a.btn {
   list-style-type: decimal-leading-zero;
   font-size: 24px;
   color: black;
-  background:silver;
+  background:#d60a36;
+  border-radius:20px;
+  text-decoration: none;
+  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-gradient(linear,  left top,  left bottom, 
+        color-stop(0.00, red), 
+        color-stop(16%, orange),
+        color-stop(32%, yellow),
+        color-stop(48%, green),
+        color-stop(60%, blue),
+        color-stop(76%, indigo),
+        color-stop(1.00, violet));
+}
+.results a {
+  text-decoration: none;
 }
 
+#all{
+  background:#5b0612;
+}
 .stations {
   color: #004d4d;
   text-align: center;
   font-size:40px;
 }
+footer{
+  color:black;
+  background-color: white;
+  text-align: center;
+}
 body{
-  background-color:white;
+  background-color:#5b0612;
 }
 
 .red {
@@ -72,5 +95,9 @@ body{
 h1{
   background:#9EB9D4;
   margin-top:0px;
-  height:150px;
+  margin-left:600px;
+  margin-right:600px;
+  height:100px;
+  border-radius:100px;
+
 }
