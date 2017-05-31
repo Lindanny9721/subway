@@ -25,8 +25,9 @@ a.btn {
 
 
 .results {
-  border: 1px solid green;
-  list-style-type: decimal-leading-zero;
+  border: 5px solid green;
+  text-align: center;
+  list-style-type: none;
   font-size: 24px;
   color: black;
   background:#d60a36;
@@ -95,8 +96,8 @@ body{
 h1{
   background:#9EB9D4;
   margin-top:0px;
-  margin-left:600px;
-  margin-right:600px;
+  margin-left:500px;
+  margin-right:500px;
   height:100px;
   border-radius:100px;
 

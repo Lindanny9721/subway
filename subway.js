@@ -101,7 +101,7 @@ $(document).ready(function() {
       var list = "";
       var results = trainData[$(this).attr("id")].stops;
       for (var i = 0; i < results.length; i++) {
-        list += "<li>"+ "<a href=\"https://www.google.com/#q=" + results[i] + "\"> "+ results[i] + "</a>" + "</li>";
+        list += "<li>"+ "<a target='_blank' href=\"https://www.google.com/#q=" + results[i] + "\"> "+ results[i] + "</a>" + "</li>";
       } 
       console.log("results are "+ list);
       
